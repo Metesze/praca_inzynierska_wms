@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Uprawnienia do Internetu -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Uprawnienie do sprawdzania stanu sieci (dla Firebase lub API wymagających dostępu do sieci) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Uprawnienie do przechowywania danych (jeśli aplikacja korzysta z przechowywania danych) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Uprawnienie do wykonywania operacji w tle (jeśli aplikacja tego wymaga, np. do powiadomień) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Magazynapp">
+
+        <!-- Ustawienie LoginActivity jako głównej aktywności -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Magazynapp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Aktywność MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Magazynapp" />
+
+        <!-- Aktywność ModifyActivity -->
+        <activity
+            android:name=".ModifyActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <!-- Aktywność ProductsActivity -->
+        <activity
+            android:name=".ProductsActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <!-- Aktywność ScannerActivity -->
+        <activity
+            android:name=".ScannerActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <!-- Aktywność AddProductDialog -->
+        <activity
+            android:name=".AddProductDialog"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <!-- Aktywność EditProductDialog -->
+        <activity
+            android:name=".EditProductDialog"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <!-- Aktywność ReportActivity -->
+        <activity
+            android:name=".ReportActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <!-- Aktywność ScannedProductsActivity -->
+        <activity
+            android:name=".ScannedProductsActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <!-- Statystyki -->
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="Statystyki"
+            android:exported="true" />
+
+
+    </application>
+
+</manifest>

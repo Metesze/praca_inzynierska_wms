@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- EditText dla nazwy produktu -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa produktu"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- EditText dla ceny produktu -->
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cena"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <!-- EditText dla ilości produktu -->
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ilość"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <!-- EditText dla kodu kreskowego -->
+    <EditText
+        android:id="@+id/editTextBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kod kreskowy"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Przycisk do dodania produktu -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj produkt" />
+</LinearLayout>

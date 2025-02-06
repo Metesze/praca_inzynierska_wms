@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Tytuł raportu w ScrollView, aby umożliwić przewijanie -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textViewReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <!-- Przyciski -->
+    <Button
+        android:id="@+id/btnBackToScanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powrót do skanera"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Powrót do menu" />
+
+</LinearLayout>

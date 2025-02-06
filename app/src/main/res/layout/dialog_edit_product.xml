@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Nazwa produktu -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa produktu"
+        android:minHeight="48dp"
+        android:inputType="text" />
+
+    <!-- Cena produktu (tylko liczby dziesiętne) -->
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cena"
+        android:minHeight="48dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Ilość produktu (tylko liczby całkowite) -->
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ilość"
+        android:minHeight="48dp"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editTextBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="barcode"
+        android:minHeight="48dp"
+        android:inputType="number" />
+
+    <!-- Przycisk do zapisania zmian -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:layout_marginTop="16dp" />
+
+    <!-- Przycisk do usunięcia produktu -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuń"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

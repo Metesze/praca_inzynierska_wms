@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Przycisk do skanowania kodu -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skanuj kod"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Przycisk do wyświetlania zeskanowanych produktów -->
+    <Button
+        android:id="@+id/btnViewScanned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pokaż zeskanowane produkty"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Przycisk do generowania raportu -->
+    <Button
+        android:id="@+id/btnGenerateReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generuj raport inwentażu"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Powrót do menu" />
+
+</LinearLayout>

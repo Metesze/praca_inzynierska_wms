@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Przycisk "Produkty" -->
+    <Button
+        android:id="@+id/btnProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produkty"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Przycisk "Modyfikacja" -->
+    <Button
+        android:id="@+id/btnModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modyfikacja"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Przycisk "Skaner" -->
+    <Button
+        android:id="@+id/btnScanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skaner"
+        android:layout_marginBottom="16dp" />
+    <Button
+        android:id="@+id/btnStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Statystyki" />
+
+
+
+
+</LinearLayout>
